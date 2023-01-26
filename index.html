@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section><img src="./image/CSRF.png" alt="CSRF-img"></section>
+					<section>Cross-site Request Forgery (CSRF/XSRF), also known as Sea Surf or Session Riding is a web security vulnerability that tricks a web browser into executing an unwanted action.</section>
+					<section>What is the Impact of CSRF Attacks?</section>
+				</section>
+				<section>
+					<section>How Does Cross-site Request Forgery Work?</section>
+					<section><img src="./image/howitwork.jpg" alt="how-it"></section>
+					<section><img src="./image/evil_user.jpg" alt="evil-user"></section>
+				</section>
+				<section>
+					<section><h3>Common defences against CSRF</h3></section>
+					<section>CSRF tokens</section>
+					<section><img src="./image/token-code.png" alt="getting-token"></section>
+					<section><img src="./image/form-handling-with-anti-csrf-protection.png" alt="protected-user"></section>
+					<section>SameSite cookies</section>
+					<section><img src="./image/ame-SiteCookie.png" alt="cookies"></section>
+					<section>Referer-based validation</section>
+					<section><img src="./image/getrequest.png" alt="referer"></section>
+				</section>
+				<section>The end</section>
+			</div>
+		</div>
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
+
+
